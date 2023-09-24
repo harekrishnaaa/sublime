@@ -1,0 +1,205 @@
+{
+  "editor.inlineSuggest.enabled": true,
+  "code-runner.runInTerminal": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontWeight": "normal",
+  "editor.fontSize": 17,
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "'Fira Code iScript','Cascadia Code','Operator Mono',Consolas, 'Courier New', 'monospace'",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          // the following elements will be in italic
+          //   (=Fira Code iScript)
+          "comment",
+          "keyword.control.import.js", // import
+          "keyword.control.export.js", // export
+          "keyword.control.from.js", // from
+          // "constant", // String, Number, Boolean…, this, super
+          "storage.modifier", // static keyword
+          "storage.type.class", // class keyword
+          "storage.type.php", // typehints in methods keyword
+          "keyword.other.new.php", // new
+          "entity.other.attribute-name", // html attributes
+          "fenced_code.block.language.markdown" // markdown language modifier
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          // the following elements will be displayed in bold
+          "entity.name.type.class" // class names
+        ],
+        "settings": {
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": [
+          // the following elements will be displayed in bold and italic
+          "entity.name.section.markdown" // markdown headlines
+        ],
+        "settings": {
+          "fontStyle": "italic bold"
+        }
+      },
+      {
+        "scope": [
+          // the following elements will be excluded from italics
+          //   (VSCode has some defaults for italics)
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json",
+          "comment.block",
+          "entity.other.attribute-name.class.css"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "github.copilot.enable": {
+    "*": false,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false
+  },
+
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    // "java": [
+    //   "javac",
+    //   "$file_name",
+    //   "&&",
+    //   "start",
+    //   "cmd",
+    //   "/k",
+    //   "java",
+    //   "$file_base_name"
+    // ],
+    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    // "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    // "cpp": "g++ $fullFileName -o $fileNameWithoutExt.exe && start $fileNameWithoutExt.exe",
+    // "c": "g++ $fullFileName -o $fileNameWithoutExt.exe && start $fileNameWithoutExt.exe",
+    // "cpp": "cd $dir && g++ -O2 -std=c++17 $fileName -o $fileNameWithoutExt && start cmd \"/k ; $fileNameWithoutExt\"",
+    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "php": "php",
+    "python": "python -u",
+
+    "perl": "perl",
+    "perl6": "perl6",
+    "ruby": "ruby",
+    "go": "go run",
+    "lua": "lua",
+    "groovy": "groovy",
+    "powershell": "powershell -ExecutionPolicy ByPass -File",
+    "bat": "cmd /c",
+    "shellscript": "bash",
+    "fsharp": "fsi",
+    "csharp": "scriptcs",
+    "vbscript": "cscript //Nologo",
+    "typescript": "ts-node",
+    "coffeescript": "coffee",
+    "scala": "scala",
+    "swift": "swift",
+    "julia": "julia",
+    "crystal": "crystal",
+    "ocaml": "ocaml",
+    "r": "Rscript",
+    "applescript": "osascript",
+    "clojure": "lein exec",
+    "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+    "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+    "racket": "racket",
+    "scheme": "csi -script",
+    "ahk": "autohotkey",
+    "autoit": "autoit3",
+    "dart": "dart",
+    "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+    "haskell": "runhaskell",
+    "nim": "nim compile --verbosity:0 --hints:off --run",
+    "lisp": "sbcl --script",
+    "kit": "kitc --run",
+    "v": "v run",
+    "sass": "sass --style expanded",
+    "scss": "scss --style expanded",
+    "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+    "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "sml": "cd $dir && sml $fileName"
+  },
+  "terminal.integrated.inheritEnv": false,
+  "codestream.email": "subham.11917218@lpu.in",
+  "workbench.productIconTheme": "fluent-icons",
+  // "[html]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  //   "editor.defaultFormatter": "vscode.html-language-features"
+  // },
+  "liveServer.settings.donotVerifyTags": true,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // "editor.defaultFormatter": "esbenp.prettier-vscode"
+
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "vsicons.dontShowNewVersionMessage": true,
+  "oracledevtools.bookmarkFileFolder": "C:\\Users\\shubh\\Oracle\\oracle.oracledevtools",
+  "oracledevtools.download.otherFolder": "C:\\Users\\shubh\\downloads",
+  "oracledevtools.connectionConfiguration.configFilesFolder": "C:\\Users\\shubh\\Oracle\\network\\admin",
+  "oracledevtools.connectionConfiguration.walletFileFolder": "C:\\Users\\shubh\\Oracle\\network\\admin",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Ubuntu-22.04 (WSL)": {
+      "path": "C:\\WINDOWS\\System32\\wsl.exe",
+      "args": ["-d", "Ubuntu-22.04"]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "tabnine.experimentalAutoImports": true,
+  "debug.onTaskErrors": "debugAnyway",
+  "c-cpp-compile-run.run-in-external-terminal": true,
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "editor.cursorBlinking": "expand",
+  "window.commandCenter": false,
+  "editor.bracketPairColorization.enabled": true,
+  "C_Cpp.errorSquiggles": "enabled",
+  "workbench.colorTheme": "Tinacious Design (High Contrast)",
+  "java.debug.settings.console": "externalTerminal",
+  "editor.accessibilitySupport": "off",
+  "[python]": {
+    "editor.formatOnType": true
+  }
+}
